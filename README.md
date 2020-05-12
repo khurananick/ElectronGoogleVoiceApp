@@ -1,12 +1,8 @@
 ## Installation
-**Run** `npm install`
+Clone this repo. \
+`cd` into the repo. \
+Run `npm install` \
+Run `electron-packager . GoogleVoiceApp --platform=darwin` // for mac \
+It will create a new directory `GoogleVoiceApp-darwin-x64`. \
+Open the new directory in finder and double-click the launch icon to run. \
 
-## Instructions
-**Open** `html/index.html` 
-**Add** `useragent="Chrome"` to `webview` tag.
-**Run** `npm start` then log in to your Google Voice account.
-**Stop** the running task
-**Open** `html/index.html` again.
-**Remove** `useragent="Chrome"` from `webview` tag.
-**Run** `npm start` - you should already be logged in to your account.
-You can now make Calls and send SMS via Google Voice in the app.
