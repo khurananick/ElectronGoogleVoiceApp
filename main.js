@@ -4,7 +4,7 @@ let path = require('path')
 
 function createWindow () {
   let width = 375;
-  let height = 700;
+  let height = 760;
   app.userAgentFallback = app.userAgentFallback.replace('Electron/' + process.versions.electron, '');
   let win = new BrowserWindow({
               width:width,
