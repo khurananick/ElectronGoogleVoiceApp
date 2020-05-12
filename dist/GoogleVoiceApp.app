@@ -1,0 +1,1 @@
+../GoogleVoiceApp-darwin-x64/GoogleVoiceApp.app
