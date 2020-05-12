@@ -1,0 +1,17 @@
+{
+  "name": "ElectronGoogleVoiceApp",
+  "version": "1.0.1",
+  "description": "This is Google Voice wrapped in Electron.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^8.2.4"
+  },
+  "dependencies": {}
+}
