@@ -4,32 +4,37 @@
     <script src="../js/jquery.js" type="text/javascript"></script>
     <style>
       html, body {
-        width: 100vw;
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-        -webkit-app-region: drag;
+        width: 100vw; height: 100vh;
+        margin: 0; padding: 0;
         overflow: hidden;
+        -webkit-app-region: drag;
       }
-      body {
+      div#body {
+        width: 100vw; height: 100vh;
+        margin: 0; padding: 0;
+        overflow: hidden;
         background-image: url(../img/background.png);
         background-size: cover;
         background-color:#000;
+        border-radius: 50px;
       }
       webview {
-        width: 335px; height: 590px; margin-top: -60px; margin-right: 5px;
+        width: 335px; height: 610px; margin-top: -60px; margin-right: 5px;
       }
       div#buttons {
         width: 335px;
         height: 50px;
-        background-color: #eee;
-        padding: 10px;
+        background-color: #bbb;
+        padding: 10px 10px;
       }
       div#buttons a {
         width: 33%;
         text-align: center;
         border: none;
         float:left;
+      }
+      div#buttons a img {
+        width: 30px;
       }
       div#buttons a img:hover {
         box-shadow: 0px 5px grey;
@@ -45,21 +50,23 @@
     </style>
   </head>
   <body>
-    <div id="container">
-      <div id="webviews">
-        <webview id="authedWebview"></webview>
-        <webview id="loginWebview" useragent="Chrome"></webview>
-      </div>
-      <div id="buttons">
-        <a id="calls">
-          <img class="tab" id="calls" src="../img/phone.png" width="35" data-path="calls" />
-        </a>
-        <a id="messages">
-          <img  class="tab" id="messages" src="../img/sms.png" width="35" data-path="messages" />
-        </a>
-        <a id="login">
-          <img  class="tab" id="user" src="../img/user.png" width="35" />
-        </a>
+    <div id="body">
+      <div id="container">
+        <div id="webviews">
+          <webview id="authedWebview"></webview>
+          <webview id="loginWebview" useragent="Chrome"></webview>
+        </div>
+        <div id="buttons">
+          <a id="calls">
+            <img class="tab" id="calls" src="../img/phone.png" data-path="calls" />
+          </a>
+          <a id="messages">
+            <img  class="tab" id="messages" src="../img/sms.png" data-path="messages" />
+          </a>
+          <a id="login">
+            <img  class="tab" id="user" src="../img/user.png" />
+          </a>
+        </div>
       </div>
     </div>
     <!-- To log in to Google Voice, use useragent="Chrome" -->
